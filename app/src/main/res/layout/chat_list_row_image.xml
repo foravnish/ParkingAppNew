@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_row_lin"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <RelativeLayout
+        android:id="@+id/relLayoutImage"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+    <ImageView
+            android:id="@+id/person_chat_image"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:contentDescription="@string/image"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY">
+        </ImageView>
+
+
+
+        <TextView
+            android:id="@+id/sent_or_received"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/person_chat_image"
+            android:layout_alignRight="@+id/person_chat_image"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="10sp"
+            android:visibility="visible" >
+        </TextView>
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignBottom="@+id/person_chat_image"
+            android:layout_alignLeft="@+id/person_chat_image"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/img"/>
+        <TextView
+            android:id="@+id/tvMessageSenderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/person_chat_image"
+            android:layout_alignTop="@+id/person_chat_image"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="10sp"
+            android:visibility="gone" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

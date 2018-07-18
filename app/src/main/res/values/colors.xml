@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1388e5</color>
+    <color name="colorPrimaryDark">#0D47A1</color>
+    <color name="colorAccent">#1388e5</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#616161</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="image_background">#82448aff</color>
+    <color name="edittext_background">#1e458aff</color>
+
+    <color name="tab_primary_text">#ffffff</color>
+    <color name="tab_secondary_text">#ec222222</color>
+    <color name="main_background">#106db6ef</color>
+    <color name="cWhite">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="colorTextLite">#a1a1a1</color>
+    <color name="colorText">#000000</color>
+    <color name="colorHint">#bdbdbd</color>
+    <color name="colorHintDark">#bfbfbf</color>
+    <color name="colorButtonSelect">#cdcdcd</color>
+    <color name="colorButtonDeselect">#e1e1e1</color>
+    <color name="colorButtonStroke">#3ab54a</color>
+    <color name="colorButtonText">#ffffff</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorGreen">#3ab54a</color>
+    <color name="colorGreenLite">#903ab54a</color>
+
+</resources>

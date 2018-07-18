@@ -1,0 +1,148 @@
+<resources>
+
+    <string name="addmob_id">ca-app-pub-2909664143187667~3731926033</string>
+
+    <string name="app_name">Parking Eye</string>
+    <string name="alert_positive_button">Ok</string>
+    <string name="alert_data_saved_successfully">User Registered Successfully</string>
+    <string name="title_activity_main_screen">Parking Eye</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Log Out</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="alert_no_internet">No internet. Please connect to a network.</string>
+    <string name="alert_something_went_wrong">Something went wrong with the app. Please try again.</string>
+    <string name="alert_app_maintenance">Application is under maintenance. Please, try again later.</string>
+    <string name="alert_app_update">Please, update the latest app from play store.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_help">Web</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_update_profile">Update Profile</string>
+    <string name="pref_header_privacy">Privacy</string>
+    <string name="pref_title_show_number_settings">Show Primary No.</string>
+
+    <string name="image">IMAGE</string>
+    <string name="type_your_message_here">Your message...</string>
+    <string name="action_share">Share</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="permission_denied_explanation_message">Location permission is needed for core functionality</string>
+    <string name="DELETE_CHAT">Delete Chat</string>
+
+    <string name="terms">This website is owned and operated by New Web Info tech (Parking Eye).\n\nWelcome to Parking Eye! Please note that each of our website and smartphone applications are provided solely to assist customers in gathering Wrong parking information,quarrel Issue, Accidental determining the availability and location of parking, and/or making legitimate parking Information, and for no other purposes.\n\n\nThis ParkingEye End User License Agreement (this “EULA” applies to any and all use of \n(1) the Parkingeye website at http://www.Parkingeye.in and all affiliated websites owned and operated solely by Parkingeye (collectively, the “Parkingeye Site”)\n\n(2) the parking reservation services made available by Parkingeye through the Parkingeye Site, any Parkingeye-branded application for your mobile or other device (each, a “Parkingeye Application”) and any other online properties of Parkingeye or third parties, as described in Part I below (the “Location Services”)\n\n(3) any Parkingeye Application, and (4) any other services or features made available by Parkingeye through the Parkingeye Site or any Parkingeye Application.\n\nParkingeye provides the Services to Users for the sole purposes of providing Users information on the location and apparent availability of wrong parking,traffic jams,fighting for parking space,quarrel and traffic jam,due to accident to connect the family person and assisting them in securing parking at participating third-party off-street parking locations, including but not limited to, parking garages and parking lots through the Parkingeye Site or a Parkingeye Application, Parkingeye communicates directly by Location Tracking. Parkingeye makes no representation or warranty (i) regarding the accuracy of any data (including, but not limited to, location availability data) received from any user. You acknowledge that each user may have its own policies, terms, and conditions.Once a registered is made by a User through the Parkingeye Site or  Parkingeye Application, Parkingeye will provide confirmation of the registration to such User by email or SMS. By using the Registration Services, you agree to receive Registration confirmations by email and SMS.</string>
+    <string name="privacy_policy">Welcome to the Parking Eye App  &amp; Web, an New Web InfoTech company, and thanks for taking the time to read our Privacy Policy. This Privacy Policy sets out how we collect, use, and share Personal Information that we obtain about you through the App &amp; Website. We will only User  information with your authorization and as permitted by your device and we will only use it in accordance with this Policy.\nWe do not sell or rent your Personal Information to marketers or third parties. We may, however, share or disclose your Personal Information We may share statistical data that does not identify you with App users and third party partners for reporting purposes e.g., to derive or report on traffic flows.\n\nYOUR RIGHTS AND CHOICES\nSubject to applicable law, you may have the right to request access to and receive information about the Personal Information we maintain about you, update and correct inaccuracies in your Personal Information, and have the information blocked or deleted, as appropriate. The right to access Personal Information may be limited in some circumstances by local law requirements. You also have the right to withdraw your consent to the collection of your Personal Information. You may at any time stop the collection of your information via the settings of your device, or by uninstalling the App. Note however that if you exercise your right of blocking or deletion, if you decline to share certain Personal Information with us, or if you withdraw your consent, we may not be able to provide to you some of the features and functionalities of the App.\nIf you receive promotional messages from us, you may unsubscribe at any time by following the opt-out instructions contained within the message. Even after you opt-out of receiving promotional messages from us, you may continue to receive administrative messages from us regarding the App. You may turn off push notifications through your device settings\n\nINFORMATION SECURITY\nWe maintain technical and organizational measures intended to protect the Personal Information we obtain about you through the App &amp; Web against unauthorized or unlawful processing and against accidental loss, destruction or damage.\n\nOur App may provide links to our website for your convenience and information. This website operate from Parkeye. Linked website may have our own privacy notices or policies, which we strongly suggest you review if you visit our linked website. To the extent our linked website you visit are  owned or controlled by Parkeye, we are  responsible for the website’ content, any use of the website, or the privacy practices of the website.</string>
+    <string name="about_us">Parking Eye is a handy tool to manage private and commercial parking functionality at parking lots with parking attendants. In market place sometimes or another place our car gets stuck due to a stranger\'s car parked at front or back of ours car in this scenario we have no other option than to wait for the owner of that car.People circle the block cruising for parking-- cruising for parking angers drivers, increases traffic congestion and air pollution, and wastes gasoline and time.It\'s easier to find long traffic jams these days. Increasing number of cars and population has led to parking problems everywhere. More often people can be seen fighting for parking space in this application Just feed in your basic information like your vehicle number, your name, your contact details etc. so that in case of an emergency you or the owner of the car can be reached via a text message, an alert or a phone call.If you see a person who Inability to speak or unconscious due to accident and he has been installed our app so our app have option to search and connect his family person through get his details on parking eye App.</string>
+    <string name="title_activity_aboutus">Parking Eye</string>
+    <string name="title_activity_terms">Terms</string>
+    <string name="token_expired">Token expired. Please relogin.</string>
+    <string name="alert_privacy_policy">All user data is kept privately. No third parties will be able to access it.</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="company_signup_message">Don\'t have an account? </string>
+    <string name="company_signup">Sign up</string>
+    <string name="alert_caps">ALERT</string>
+    <string name="description">Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+
+    <!--Internet tags start-->
+    <string name="internet_error_tag">Internet Connection</string>
+    <string name="internet_error_msg">Please connect to working Internet connection</string>
+    <string name="server_time_out_tag">Internet Connection</string>
+    <string name="server_time_out_msg">Slow internet response. Please try after some time.</string>
+    <string name="server_error_reporting_tag">Server Error</string>
+    <string name="server_error_reporting_msg">The server encountered an internal error or misconfiguration and was unable to complete your request. Please report this error to help fix the problem and improve this application.</string>
+
+    <string name="report2">Report</string>
+    <string name="retry">Retry</string>
+
+
+</resources>

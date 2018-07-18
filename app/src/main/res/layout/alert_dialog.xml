@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alert_bar_height"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_alert_dialog_about"
+            android:layout_width="@dimen/alert_bar_height"
+            android:layout_height="@dimen/alert_bar_height"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_about" />
+
+        <TextView
+            android:id="@+id/tv_alert_dialog_title"
+            style="@style/tvTextLarge"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/alert_caps"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/alert_bar_height"
+            android:layout_height="@dimen/alert_bar_height"
+            android:layout_marginRight="5dp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/vertical_margin"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_alert_dialog_detail"
+                style="@style/tvTextNormal"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/vertical_margin_half"
+                android:text="@string/description" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/vertical_margin_half"
+        android:layout_marginRight="@dimen/vertical_margin_half"
+        android:visibility="gone"
+        android:background="@color/colorHint"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_alert_dialog_button2"
+            style="@style/Button_disable"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorTransparent"
+            android:textColor="@color/colorTextLite"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:text="@string/cancel" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/vertical_margin_half"
+            android:layout_marginBottom="@dimen/vertical_margin_half"
+            android:background="@color/colorHint"/>
+
+        <Button
+            android:id="@+id/btn_alert_dialog_button1"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorTransparent"
+            android:textColor="@color/colorGreen"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:text="@string/ok" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:clickable="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_image2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50ffffff"/>
+
+
+    <ScrollView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.newwebinfotech.rishabh.parkingapp.ProfileFragment">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/profile_constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:paddingBottom="16dp"
+            android:paddingLeft="20dp"
+            android:focusableInTouchMode="true">
+
+            <RelativeLayout
+                android:id="@+id/image_relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="0dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_picture"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:background="@drawable/bg_profile_shadow"
+                        android:contentDescription="GST Profile"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/profile" />
+
+                    <EditText
+                        android:id="@+id/profile_status"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        tools:text="Hello"
+                        android:inputType="textPersonName|textCapWords"
+                        android:hint="Status"
+                        android:gravity="center"
+                        android:enabled="false"
+                        android:ellipsize="end"
+                        android:textSize="12sp"
+                        android:background="@android:color/transparent" />
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/profile_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName|textCapWords"
+                android:enabled="false"
+                android:padding="8dp"
+                android:hint="Name"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/primary_text"
+                android:background="@drawable/edittext_background"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/image_relative"
+                android:layout_marginRight="16dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="16dp" />
+
+            <EditText
+                android:id="@+id/profile_vehicle_no_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary_text"
+                android:enabled="false"
+                android:background="@drawable/edittext_background"
+                android:hint="Vehicle No. 1"
+                android:inputType="textCapCharacters"
+                android:padding="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_username"
+                android:layout_marginRight="16dp" />
+
+            <EditText
+                android:id="@+id/profile_vehicle_type_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary_text"
+                android:enabled="false"
+                android:background="@drawable/edittext_background"
+                android:hint="Vehicle Type"
+                android:padding="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_vehicle_no_1"
+                android:layout_marginRight="16dp" />
+
+            <EditText
+                android:id="@+id/profile_vehicle_no_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary_text"
+                android:background="@drawable/edittext_background"
+                android:hint="Vehicle No. 2"
+                android:inputType="textCapCharacters"
+                android:padding="8dp"
+                android:enabled="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_vehicle_type_1"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp" />
+
+
+            <EditText
+                android:id="@+id/profile_vehicle_type_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary_text"
+                android:enabled="false"
+                android:background="@drawable/edittext_background"
+                android:hint="Vehicle Type"
+                android:padding="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_vehicle_no_2"
+                android:layout_marginRight="16dp" />
+
+            <EditText
+                android:id="@+id/profile_vehicle_no_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary_text"
+                android:enabled="false"
+                android:background="@drawable/edittext_background"
+                android:hint="Vehicle No. 3"
+                android:inputType="textCapCharacters"
+                android:padding="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_vehicle_type_2"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp" />
+
+            <EditText
+                android:id="@+id/profile_vehicle_type_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary_text"
+                android:enabled="false"
+                android:background="@drawable/edittext_background"
+                android:hint="Vehicle Type"
+                android:padding="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_vehicle_no_3"
+                android:layout_marginRight="16dp" />
+
+            <EditText
+                android:id="@+id/profile_vehicle_no_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary_text"
+                android:enabled="false"
+                android:background="@drawable/edittext_background"
+                android:hint="Vehicle No. 4"
+                android:inputType="textCapCharacters"
+                android:padding="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_vehicle_type_3"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp" />
+
+            <EditText
+                android:id="@+id/profile_vehicle_type_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary_text"
+                android:enabled="false"
+                android:background="@drawable/edittext_background"
+                android:hint="Vehicle Type"
+                android:padding="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_vehicle_no_4"
+                android:layout_marginRight="16dp" />
+
+            <EditText
+                android:id="@+id/profile_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary_text"
+                android:enabled="false"
+                android:background="@drawable/edittext_background"
+                android:hint="City/State"
+                android:inputType="textCapCharacters"
+                android:padding="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_vehicle_type_4"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp" />
+
+            <EditText
+                android:id="@+id/profile_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary_text"
+                android:enabled="false"
+                android:background="@drawable/edittext_background"
+                android:hint="Country"
+                android:inputType="textCapCharacters"
+                android:padding="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_city"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp" />
+
+            <EditText
+                android:id="@+id/profile_primary_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary_text"
+                android:enabled="false"
+                android:background="@drawable/edittext_background"
+                android:hint="Primary Mobile No."
+                android:inputType="textCapCharacters"
+                android:padding="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_country"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp" />
+
+            <EditText
+                android:id="@+id/profile_alternate_mobile1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary_text"
+                android:enabled="false"
+                android:background="@drawable/edittext_background"
+                android:hint="Alternate Mobile No. 1"
+                android:inputType="textCapCharacters"
+                android:padding="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_primary_mobile"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp" />
+
+            <EditText
+                android:id="@+id/profile_alternate_mobile2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary_text"
+                android:enabled="false"
+                android:background="@drawable/edittext_background"
+                android:hint="Alternate Mobile No. 2"
+                android:inputType="textCapCharacters"
+                android:padding="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_alternate_mobile1"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp" />
+
+            <EditText
+                android:id="@+id/profile_alternate_mobile3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary_text"
+                android:enabled="false"
+                android:background="@drawable/edittext_background"
+                android:hint="Alternate Mobile No. 3"
+                android:inputType="textCapCharacters"
+                android:padding="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_alternate_mobile2"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp" />
+
+
+
+            <Button
+                android:id="@+id/edit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textColor="#FFFFFF"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/profile_username"
+                android:layout_marginRight="16dp"
+                android:textSize="12sp"
+                android:textColor="@color/primary_text"
+                app:layout_constraintTop_toTopOf="@+id/profile_username"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_username"
+                app:layout_constraintVertical_bias="0.6" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle 1"
+                app:layout_constraintTop_toTopOf="@+id/profile_vehicle_no_1"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_vehicle_no_1"
+                android:layout_marginLeft="16dp"
+                android:textSize="12sp"
+                android:textColor="@color/primary_text"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/profile_vehicle_no_1"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle 2"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="12sp"
+                android:textColor="@color/primary_text"
+                app:layout_constraintRight_toLeftOf="@+id/profile_vehicle_no_2"
+                app:layout_constraintTop_toTopOf="@+id/profile_vehicle_no_2"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_vehicle_no_2"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle 3"
+                android:textSize="12sp"
+                android:textColor="@color/primary_text"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintRight_toLeftOf="@+id/profile_vehicle_no_3"
+                app:layout_constraintTop_toTopOf="@+id/profile_vehicle_no_3"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_vehicle_no_3"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle 4"
+                android:textSize="12sp"
+                android:textColor="@color/primary_text"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintRight_toLeftOf="@+id/profile_vehicle_no_4"
+                app:layout_constraintTop_toTopOf="@+id/profile_vehicle_no_4"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_vehicle_no_4"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textSize="12sp"
+                android:textColor="@color/primary_text"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintRight_toLeftOf="@+id/profile_city"
+                app:layout_constraintTop_toTopOf="@+id/profile_city"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_city"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:textSize="12sp"
+                android:textColor="@color/primary_text"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintRight_toLeftOf="@+id/profile_country"
+                app:layout_constraintTop_toTopOf="@+id/profile_country"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_country"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Primary No"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="12sp"
+                android:textColor="@color/primary_text"
+                app:layout_constraintRight_toLeftOf="@+id/profile_primary_mobile"
+                app:layout_constraintTop_toTopOf="@+id/profile_primary_mobile"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_primary_mobile"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alt No. 1"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="12sp"
+                android:textColor="@color/primary_text"
+                app:layout_constraintRight_toLeftOf="@+id/profile_alternate_mobile1"
+                app:layout_constraintTop_toTopOf="@+id/profile_alternate_mobile1"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_alternate_mobile1"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alt No. 2"
+                android:textSize="12sp"
+                android:textColor="@color/primary_text"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintRight_toLeftOf="@+id/profile_alternate_mobile2"
+                app:layout_constraintTop_toTopOf="@+id/profile_alternate_mobile2"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_alternate_mobile2"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alt. No. 3"
+                android:textSize="12sp"
+                android:textColor="@color/primary_text"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintRight_toLeftOf="@+id/profile_alternate_mobile3"
+                app:layout_constraintTop_toTopOf="@+id/profile_alternate_mobile3"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_alternate_mobile3"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Type"
+                android:textSize="12sp"
+                android:textColor="@color/primary_text"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintRight_toLeftOf="@+id/profile_vehicle_type_1"
+                app:layout_constraintTop_toTopOf="@+id/profile_vehicle_type_1"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_vehicle_type_1"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Type"
+                android:textSize="12sp"
+                android:textColor="@color/primary_text"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintRight_toLeftOf="@+id/profile_vehicle_type_2"
+                app:layout_constraintTop_toTopOf="@+id/profile_vehicle_type_2"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_vehicle_type_2"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Type"
+                android:textSize="12sp"
+                android:textColor="@color/primary_text"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintRight_toLeftOf="@+id/profile_vehicle_type_3"
+                app:layout_constraintTop_toTopOf="@+id/profile_vehicle_type_3"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_vehicle_type_3"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Type"
+                android:textSize="12sp"
+                android:textColor="@color/primary_text"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintRight_toLeftOf="@+id/profile_vehicle_type_4"
+                app:layout_constraintTop_toTopOf="@+id/profile_vehicle_type_4"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_vehicle_type_4"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <EditText
+                android:id="@+id/profile_user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary_text"
+                android:enabled="false"
+                android:background="@drawable/edittext_background"
+                android:hint="Email"
+                android:inputType="textCapCharacters"
+                android:padding="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/profile_alternate_mobile3"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="12sp"
+                android:textColor="@color/primary_text"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintRight_toLeftOf="@id/profile_user_email"
+                app:layout_constraintTop_toTopOf="@id/profile_user_email"
+                app:layout_constraintBottom_toBottomOf="@id/profile_user_email"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <ProgressBar
+                android:id="@+id/progressBar_profile"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="32dp"
+                android:visibility="gone"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<com.google.android.gms.ads.AdView-->
+        <!--android:id="@+id/search_ad_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginBottom="2dp"-->
+        <!--ads:adSize="BANNER"-->
+        <!--android:visibility="visible"-->
+        <!--ads:adUnitId="ca-app-pub-2909664143187667/8260296266">-->
+
+        <!--</com.google.android.gms.ads.AdView>-->
+        <!--</LinearLayout>-->
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

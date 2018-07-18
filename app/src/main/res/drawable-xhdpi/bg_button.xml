@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" >
+        <shape>
+            <solid
+                android:color="@color/colorButtonSelect" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/colorButtonSelect" />
+            <corners
+                android:radius="4dp" />
+            <padding
+                android:left="50dp"
+                android:top="0dp"
+                android:right="50dp"
+                android:bottom="0dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/colorButtonDeselect"
+                android:endColor="@color/colorButtonDeselect"
+                android:angle="270" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/colorButtonDeselect" />
+            <corners
+                android:radius="4dp" />
+            <padding
+                android:left="50dp"
+                android:top="0dp"
+                android:right="50dp"
+                android:bottom="0dp" />
+        </shape>
+    </item>
+</selector>

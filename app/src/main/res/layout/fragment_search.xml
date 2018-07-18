@@ -1,0 +1,312 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.newwebinfotech.rishabh.parkingapp.SearchFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/search_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters|textNoSuggestions"
+            android:background="@color/edittext_background"
+            android:drawableLeft="@drawable/ic_search_black_36dp"
+            android:drawableStart="@drawable/ic_search_black_36dp"
+            android:hint="Search Vehicle No./Mobile No."
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/go_button"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:paddingBottom="10dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ProgressBar
+            android:id="@+id/search_progressBar"
+            style="?android:attr/progressBarStyle"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/search_result_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/search_imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/image_background"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/search_user_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/primary_text"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    tools:text="This is my status. My name is Rishabh Sharma. I live in Delhi." />
+
+                <TextView
+                    android:id="@+id/search_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/primary_text"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="Rishabh Sharma" />
+
+                <LinearLayout
+                    android:id="@+id/search_user_primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/search_user_primary_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_text"
+                        android:layout_gravity="center_vertical"
+                        tools:text="8285215836"/>
+                    <!--<Button-->
+                        <!--android:id="@+id/track"-->
+                        <!--android:layout_width="45dp"-->
+                        <!--android:layout_height="45dp"-->
+                        <!--android:background="@drawable/mapdrop"-->
+                        <!--android:paddingLeft="10dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:textAllCaps="false"-->
+                        <!--android:textColor="#fff"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:paddingRight="10dp"/>-->
+                    <ImageButton
+                        android:id="@+id/track"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/icon"/>
+
+                    <!--<ImageButton
+                        android:id="@+id/search_user_primary_msg"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/ContactButton"
+                        android:src="@drawable/ic_message_black_24dp"/>-->
+
+                    <ImageButton
+                         android:id="@+id/search_user_primary_msg"
+                         android:layout_gravity="center_vertical"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/ic_message_black_24dp"/>
+
+
+                    <ImageButton
+                        android:id="@+id/search_user_primary_call"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_call_black_24dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/search_user_alternate1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/search_user_alternate1_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_text"
+                        android:layout_gravity="center_vertical"
+                        tools:text="8285215836"/>
+
+                    <ImageButton
+                        android:id="@+id/search_user_alternate1_msg"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_email_black_24dp"/>
+
+                    <ImageButton
+                        android:id="@+id/search_user_alternate1_call"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_call_black_24dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/search_user_alternate2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:visibility="gone"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/search_user_alternate2_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_text"
+                        android:layout_gravity="center_vertical"
+                        tools:text="8285215836"/>
+
+                    <ImageButton
+                        android:id="@+id/search_user_alternate2_msg"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_email_black_24dp"/>
+
+                    <ImageButton
+                        android:id="@+id/search_user_alternate2_call"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_call_black_24dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/search_user_alternate3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:visibility="gone"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/search_user_alternate3_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_text"
+                        android:layout_gravity="center_vertical"
+                        tools:text="8285215836"/>
+
+                    <ImageButton
+                        android:id="@+id/search_user_alternate3_msg"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_email_black_24dp"/>
+
+                    <ImageButton
+                        android:id="@+id/search_user_alternate3_call"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_call_black_24dp"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/search_ad_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="2dp"
+        ads:adSize="BANNER"
+        android:visibility="visible"
+        ads:adUnitId="ca-app-pub-2909664143187667/8260296266">
+
+    </com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>

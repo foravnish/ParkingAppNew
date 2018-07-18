@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "104503640413",
+    "firebase_url": "https://parking-eye.firebaseio.com",
+    "project_id": "parking-eye",
+    "storage_bucket": "parking-eye.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104503640413:android:63dcb9ded9ae8719",
+        "android_client_info": {
+          "package_name": "com.example.rishabh.parkingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104503640413-jruc3qk12977l7mi805qs4u52reru70o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNGRq_TBr8vHVtvuc0qWnN4JKo_hltUu4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104503640413:android:7832adf5f359c347",
+        "android_client_info": {
+          "package_name": "com.newwebinfotech.rishabh.parkingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104503640413-jruc3qk12977l7mi805qs4u52reru70o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNGRq_TBr8vHVtvuc0qWnN4JKo_hltUu4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

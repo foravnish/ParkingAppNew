@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add More Vehicles"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:inputType="textCapCharacters|textShortMessage"
+        android:textColor="@color/primary_text"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/vehicle_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:hint="Vehicle No. 2"
+        android:padding="8dp"
+        android:inputType="textCapCharacters|textShortMessage"
+        android:background="@drawable/edittext_background"/>
+
+    <EditText
+        android:id="@+id/vt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:hint="Vehicle Name"
+        android:padding="8dp"
+        android:inputType="textCapCharacters|textShortMessage"
+        android:background="@drawable/edittext_background"/>
+
+    <EditText
+        android:id="@+id/vehicle_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:hint="Vehicle No. 3"
+        android:padding="8dp"
+        android:inputType="textCapCharacters|textShortMessage"
+        android:background="@drawable/edittext_background"/>
+
+    <EditText
+        android:id="@+id/vt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:hint="Vehicle Name"
+        android:padding="8dp"
+        android:inputType="textCapCharacters|textShortMessage"
+        android:background="@drawable/edittext_background"/>
+
+    <EditText
+        android:id="@+id/vehicle_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:hint="Vehicle No. 4"
+        android:padding="8dp"
+        android:inputType="textCapCharacters|textShortMessage"
+        android:background="@drawable/edittext_background"/>
+
+    <EditText
+        android:id="@+id/vt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:hint="Vehicle Name"
+        android:padding="8dp"
+        android:inputType="textCapCharacters|textShortMessage"
+        android:background="@drawable/edittext_background"/>
+
+</LinearLayout>
